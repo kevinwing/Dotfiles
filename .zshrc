@@ -110,3 +110,5 @@ export alias rm="rm -I"
 export alias g="git"
 export alias gs="git status"
 export EDITOR=/usr/bin/vim
+
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles_git/ --work-tree=$HOME'
