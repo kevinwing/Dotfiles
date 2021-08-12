@@ -10,7 +10,6 @@ export ZSH="/home/krw/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="spaceship"
 SPACESHIP_DIR_TRUNC=0
-SPACESHIP_DIR_TRUNC_REPO=false
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -102,13 +101,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Custom path exports
 export PATH=/home/krw/.local/bin:$PATH
 
 export alias mv="mv -i"
-export alias rm="rm -I"
+export alias rm="rm -i"
 export alias g="git"
 export alias gs="git status"
-export EDITOR=/usr/bin/vim
 
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles_git/ --work-tree=$HOME'
+alias ll='ls -l'
+alias la='ls -lA'
+EDITOR=/usr/bin/vim
+
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
