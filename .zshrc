@@ -8,8 +8,9 @@ export ZSH="/home/krw/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
-SPACESHIP_DIR_TRUNC=0
+# ZSH_THEME="spaceship"
+# SPACESHIP_DIR_TRUNC=0
+eval "$(starship init zsh)"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -102,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH=/home/krw/.local/bin:$PATH
+export PATH=/home/krw/.scripts:$PATH
 
 export alias mv="mv -i"
 export alias rm="rm -i"
